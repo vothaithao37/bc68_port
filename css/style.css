@@ -1,0 +1,164 @@
+header .nav-link {
+  position: relative;
+  margin: 0 15px;
+}
+
+header .nav-item .nav-link.active {
+  color: #35a22c !important;
+}
+
+header .nav-link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #35a22c;
+  transition: all 0.5s;
+}
+
+header .nav-link:hover::before {
+  width: 100%;
+}
+
+header .active::before {
+  width: 100%;
+}
+
+/* Xử lí khi hover vào nội dung nút điều hướng sẽ đổi màu chữ  */
+header .nav-link:hover {
+  color: #35a22c !important;
+}
+
+.carousel .carousel-caption img {
+  width: 150px;
+  height: 150px;
+}
+
+.carousel .carousel-caption {
+  /* left: 50%;
+    top: 50%; */
+  /* transform nhận giá trị -âm cho 2 chiều giúp đẩy ngược phần tử lại nhằm mục đích canh giữa phần tử  */
+  /* transform: translate(-50%, -50%);
+    right: unset;
+    bottom: unset; */
+
+  top: 0;
+  left: 0;
+  background-color: rgba(39, 43, 54, 0.5);
+  /* width: 100%;
+    height: 100%; */
+  right: 0;
+  bottom: 0;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.project .nav-pills .nav-link.active {
+  background-color: #35a22c;
+  border-color: #35a22c;
+}
+
+.project button {
+  color: black;
+  border: 1px solid black;
+}
+
+.project .nav-link:hover {
+  color: black;
+}
+
+.project .project_item {
+  border-radius: 8px;
+  /* padding: 20px; */
+  background-color: pink;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.project .project_item img {
+  /* border-radius với 4 giá trị sẽ đi theo hướng topleft đi về tay phải  */
+  border-radius: 8px 8px 0 0;
+}
+
+.project .project_item:hover h3 {
+  color: #35a22c;
+}
+
+.project .project_text {
+  border: 1px solid transparent;
+  transition: all 0.5s;
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+}
+
+.project .project_item:hover .project_text {
+  /* border: 1px solid green; */
+  border-color: #35a22c;
+}
+
+.available {
+  background-image: url(./../image/3.jpg);
+  height: 60vh;
+  color: white;
+  position: relative;
+}
+
+.available::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.286);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.available i {
+  color: #35a22c;
+  font-size: 50px;
+}
+
+.available .avai_content .avai_item {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 40px;
+  text-align: center;
+}
+
+/* lưu ý đặc biệt khi sử dụng max-width cho responsive website: luôn để các giá trị lớn nằm trên giá trị nhỏ */
+
+/* @media screen and (max-width: 1200px) {
+  .carousel h5 {
+    color: red;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .project_item {
+    background-color: orange;
+  }
+} */
+
+/* .carousel h5 {
+  color: orange;
+} */
+
+/* lưu ý: khi sử dụng min-width để responsive website nhớ set từ giá trị nhỏ trước sau đó mới tới lớn */
+
+/* @media screen and (min-width: 576px) {
+  .carousel h5 {
+    color: orange;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .carousel h5 {
+    color: purple;
+  }
+} */

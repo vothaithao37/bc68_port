@@ -1,0 +1,427 @@
+<!-- Câu lệnh tạo nhanh một template html có gắn cdn bootstrap  -->
+<!-- bs5-$  -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <!-- fa6-cdn  -->
+
+    <!-- FontAwesome 6.2.0 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- animate css  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <!-- background (bg-)  -->
+    <!-- text (text-) -->
+    <!-- mt mb ms(margin start) me(margin end) -->
+    <!-- 1 rem bằng 16px  -->
+    <!-- <h1 class="bg-success text-white p-1">Tôi là BC68</h1> -->
+
+    <!-- header  -->
+    <header class="position-absolute top-0 start-0 z-1 w-100">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <!-- icon  -->
+              <i class="fa-solid fa-dice-d20 text-success fs-1"></i>
+              <span class="text-white fs-2">CyberPortfolio</span>
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarNav"
+            >
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a
+                    class="nav-link text-white active"
+                    aria-current="page"
+                    href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Service</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- carousel  -->
+    <section class="carousel">
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner vh-100">
+          <div class="carousel-item h-100 active">
+            <img src="./image/finland.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <img class="rounded-circle" src="./image/01-3.jpg" alt="" />
+              <h5>Our goals. Our mission.</h5>
+              <p>How we help other companies to grow.</p>
+            </div>
+          </div>
+          <div class="carousel-item h-100">
+            <img src="./image/mountains.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <img class="rounded-circle" src="./image/02-3.jpg" alt="" />
+              <h5>Our goals. Our mission.</h5>
+              <p>How we help other companies to grow.</p>
+            </div>
+          </div>
+          <div class="carousel-item h-100">
+            <img
+              src="./image/mountains-1.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <img class="rounded-circle" src="./image/03-3.jpg" alt="" />
+              <h5>Our goals. Our mission.</h5>
+              <p>How we help other companies to grow.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- project  -->
+    <section class="project py-5">
+      <div class="container">
+        <!-- title  -->
+        <div class="project_title"></div>
+
+        <!-- content  -->
+        <div class="project_content">
+          <ul
+            class="nav nav-pills mb-3 justify-content-center"
+            id="pills-tab"
+            role="tablist"
+          >
+            <li class="nav-item mx-2" role="presentation">
+              <button
+                class="nav-link active"
+                id="pills-home-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-home"
+                type="button"
+                role="tab"
+                aria-controls="pills-home"
+                aria-selected="true"
+              >
+                Home
+              </button>
+            </li>
+            <li class="nav-item mx-2" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-profile-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-profile"
+                type="button"
+                role="tab"
+                aria-controls="pills-profile"
+                aria-selected="false"
+              >
+                Profile
+              </button>
+            </li>
+            <li class="nav-item mx-2" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-contact-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-contact"
+                type="button"
+                role="tab"
+                aria-controls="pills-contact"
+                aria-selected="false"
+              >
+                Contact
+              </button>
+            </li>
+            <li class="nav-item mx-2" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-disabled-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-disabled"
+                type="button"
+                role="tab"
+                aria-controls="pills-disabled"
+                aria-selected="false"
+              >
+                Disabled
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="pills-home"
+              role="tabpanel"
+              aria-labelledby="pills-home-tab"
+              tabindex="0"
+            >
+              <div class="row gy-5">
+                <!-- col  -->
+                <div class="col-12 col-sm-6 col-xl-4">
+                  <div
+                    class="wow animate__animated animate__zoomIn project_item"
+                  >
+                    <img class="w-100" src="./image/g1.jpg" alt="" />
+                    <div class="project_text p-4 text-center">
+                      <h3>Apologetic robot holding flowers</h3>
+                      <span>Branding</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- col  -->
+                <div class="col-12 col-sm-6 col-xl-4">
+                  <div
+                    class="wow animate__animated animate__zoomIn project_item"
+                  >
+                    <img class="w-100" src="./image/g1.jpg" alt="" />
+                    <div class="project_text p-4 text-center">
+                      <h3>Apologetic robot holding flowers</h3>
+                      <span>Branding</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- col  -->
+                <div class="col-12 col-sm-6 col-xl-4">
+                  <div
+                    class="wow animate__animated animate__zoomIn project_item"
+                  >
+                    <img class="w-100" src="./image/g1.jpg" alt="" />
+                    <div class="project_text p-4 text-center">
+                      <h3>Apologetic robot holding flowers</h3>
+                      <span>Branding</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- col  -->
+                <div class="col-12 col-sm-6 col-xl-4">
+                  <div
+                    class="wow animate__animated animate__zoomIn project_item"
+                  >
+                    <img class="w-100" src="./image/g1.jpg" alt="" />
+                    <div class="project_text p-4 text-center">
+                      <h3>Apologetic robot holding flowers</h3>
+                      <span>Branding</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- col  -->
+                <div class="col-12 col-sm-6 col-xl-4">
+                  <div
+                    class="wow animate__animated animate__zoomIn project_item"
+                  >
+                    <img class="w-100" src="./image/g1.jpg" alt="" />
+                    <div class="project_text p-4 text-center">
+                      <h3>Apologetic robot holding flowers</h3>
+                      <span>Branding</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- col  -->
+                <div class="col-12 col-sm-6 col-xl-4">
+                  <div
+                    class="wow animate__animated animate__zoomIn project_item"
+                  >
+                    <img class="w-100" src="./image/g1.jpg" alt="" />
+                    <div class="project_text p-4 text-center">
+                      <h3>Apologetic robot holding flowers</h3>
+                      <span>Branding</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+            tabindex="0">...</div>
+          <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
+            tabindex="0">số 3</div>
+          <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab"
+            tabindex="0">...</div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- available -->
+    <section class="available">
+      <div class="container position-relative">
+        <!-- title  -->
+        <div class="project_title text-center p-3">
+          <h3>I'm Available For Hire</h3>
+          <p>
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+            posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis
+            sodales quis. Integer sit amet mattis quam.
+          </p>
+        </div>
+
+        <!-- content  -->
+        <div class="avai_content">
+          <div class="tab-content" id="pills-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="pills-home"
+              role="tabpanel"
+              aria-labelledby="pills-home-tab"
+              tabindex="0"
+            >
+              <div class="row gy-5">
+                <!-- col  -->
+                <div class="col-4">
+                  <div class="avai_item">
+                    <div class="project_text p-4 text-center">
+                      <i class="fa fa-paint-brush"></i>
+                      <h3>Design</h3>
+                      <span
+                        >Vestibulum ante ipsum primis in faucibus orci luctus et
+                        ultrices posuere cubilia Curae; Nulla mollis dapibus
+                        nunc</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- col  -->
+                <div class="col-4">
+                  <div class="avai_item">
+                    <div class="project_text p-4 text-center">
+                      <i class="fa fa-shekel-sign"> </i>
+                      <h3>Marketing</h3>
+                      <span
+                        >Vestibulum ante ipsum primis in faucibus orci luctus et
+                        ultrices posuere cubilia Curae; Nulla mollis dapibus
+                        nunc</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- col  -->
+                <div class="col-4">
+                  <div class="avai_item">
+                    <div class="project_text p-4 text-center">
+                      <i class="fa fa-camera"></i>
+                      <h3>Photography</h3>
+                      <span
+                        >Vestibulum ante ipsum primis in faucibus orci luctus et
+                        ultrices posuere cubilia Curae; Nulla mollis dapibus
+                        nunc</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- award -->
+    <section class="award"></section>
+
+    <!-- footer  -->
+    <footer></footer>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- wowjs -->
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+      integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      new WOW().init();
+    </script>
+  </body>
+</html>
